@@ -1,0 +1,40 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+@media (max-width: 992px)
+    .container
+        max-width: 700px
+    .header
+        &__item
+            margin-right: 30px
+@media (max-width: 768px)
+    .container
+        max-width: 576px
+        width: 92%
+    .header
+        padding: 18px 0
+        &__logo
+            width: 77px
+        &__links
+            display: none
+        &__menu
+            &-button
+                display: flex
+                width: 22px
+                height: 17.7px
+                align-items: center
+                justify-content: space-between
+                flex-direction: column
+                border: none
+                background-color: transparent
+                cursor: pointer
+                padding: 0
+    .menu
+        &-button
+            &__line
+                width: 22px
+                height: 2.2px
+                background-color: $light
+@media (max-width: 576px)
+    .container
+        max-width: 85%
