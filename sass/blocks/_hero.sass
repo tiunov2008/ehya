@@ -1,0 +1,71 @@
+.hero
+    background-color: $primary
+    position: relative
+    &-wrapper
+        max-width: max-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-family: HK Grotesk
+    &__title
+        text-align: center
+        margin-top: 122px
+        margin-bottom: 24px
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 56px
+        line-height: 68px
+        letter-spacing: 0.2px
+    &__subtitle
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 36px
+        margin-bottom: 40px
+    &__buttons
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+    &__button
+        +hero-btn()
+        &_fill
+            background-color: $light
+            margin-right: 16px
+            color: $primary
+        &_primary
+            background-color: transparent
+            margin-right: 16px
+            color: $light
+        &-icon
+            &_left
+                margin-right: 5px
+            &_right
+                margin-left: 13px
+    &__text
+        mix-blend-mode: normal
+        opacity: 0.6
+        margin-bottom: 105px
+
+    &__wave
+        width: 105%
+        height: 100px
+        background-color: $primary
+        border-radius: 0 0 75% 75%
+        position: absolute
+        bottom: 0
+        z-index: -100
+        &-wrapper
+            width: 100%
+            overflow-x: hidden
+            display: flex
+            justify-content: center
+    &__hidden
+        position: absolute
+        width: 100%
+        bottom: -100px
+        height: 300px
+        overflow: hidden
+
+
+

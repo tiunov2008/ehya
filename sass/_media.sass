@@ -7,7 +7,15 @@
     .header
         &__item
             margin-right: 30px
-@media (max-width: 768px)
+    .cards
+        &-wrapper
+            width: 704px
+        &__card
+            flex-direction: column
+            &-text
+                max-width: 280px
+
+@media (max-width: 767px)
     .container
         max-width: 576px
         width: 92%
@@ -35,6 +43,32 @@
                 width: 22px
                 height: 2.2px
                 background-color: $light
+    .hero
+        &__title
+            font-size: 48px
+            line-height: 60px
+    .cards
+        &-wrapper
+            flex-direction: column
+            align-items: center
+            width: 100%
+        &__card
+            align-items: center
+            width: 100%
+            &-text
+                max-width: 90%
+            
 @media (max-width: 576px)
     .container
         max-width: 85%
+    .hero
+        &__cards
+            transform: translateY(750px)
+@media (max-width: 320px)
+    .hero
+        &__cards
+            transform: translateY(950px)
+        &__title
+            font-size: 32px
+            line-height: 40px
+
