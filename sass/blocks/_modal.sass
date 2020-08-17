@@ -1,0 +1,102 @@
+.modal
+    &__overlay
+        position: fixed
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: #000000
+        mix-blend-mode: normal
+        opacity: 0.8
+        z-index: 100
+        visibility: hidden
+        transition: opacity 0.2s
+        &_visible
+            visibility: visible
+    &__dialog
+        position: fixed
+        left: 50%
+        top: 50%
+        padding: 33px 88px
+        color: $light
+        background: $light
+        border-radius: 12px
+        transform: translate(-50%,-50%)
+        z-index: 101
+        max-width: 478px
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        &_visible
+            visibility: visible
+            opacity: 1
+    &__form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    &__contact
+        &-form
+            display: flex
+            align-items: center
+            flex-direction: column
+    &__close
+        position: absolute
+        right: 18px
+        top: 17px
+        text-decoration: none
+        cursor: pointer
+    &__title
+        margin-top: 0
+        margin-bottom: 15px
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #183B56
+    &__google
+        background: $primary
+        border-radius: 8px
+        display: flex
+        align-items: center
+        width: 100%
+        &-text
+            margin: 0 40px
+    &__input
+        margin-bottom: 15px
+        width: 100%
+        background: #FFFFFF
+        border: 1px solid #C3CAD9
+        box-sizing: border-box
+        border-radius: 8px
+        padding: 17px 17px 20px
+        width: 100%  
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: $dark
+    &__button
+        background: #1565D8
+        width: 100%
+        padding: 16px 0 16px 0
+        border-radius: 8px
+        font-family: Open Sans
+        font-style: norma
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        text-align: center
+        color: $light
+    &__required
+        font-family: Muli
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: #5A7184
+    

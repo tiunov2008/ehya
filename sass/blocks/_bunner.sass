@@ -1,0 +1,42 @@
+.bunner
+    background-image: url("../img/hero-bg.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 100px 130px
+    &__title
+        max-width: 458px
+        margin: 0
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: 0.2px
+    &__buttons
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+    &__button
+        +btn()
+        &_fill
+            background-color: $light
+            margin-right: 16px
+            color: $primary
+        &_primary
+            background-color: transparent
+            margin-right: 16px
+            color: $light
+            width: 177px    
+            margin-right: 0
+            padding: 16px 24px
+        &-icon
+            &_left
+                margin-right: 5px
+            &_right
+                margin-left: 13px

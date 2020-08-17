@@ -1,12 +1,82 @@
 .cards
     display: flex
     align-items: center
-    flex-direction: column            
+    flex-direction: column  
+    position: relative
+    &_light
+        background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%)
+    &__subtitle
+        position: relative
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: $primary
+        padding: 5px 12px
+        text-transform: uppercase
+        &-wrapper
+            display: flex
+            width: 100%
+            justify-content: center
+        &-bg
+            left: 50%
+            transform: translateX(-50%)
+            position: absolute
+            width: 100px
+            height: 32px
+            background: #36B37E
+            opacity: 0.1
+            border-radius: 2000px
+    &__title
+        color: $dark
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        text-align: center
+        letter-spacing: 0.2px
+        margin-bottom: 64px    
+        &-wrapper
+            display: flex
+            width: 100%
+            justify-content: center
+        &-light
+            margin-bottom: 0
+    &__text
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 32px
+        text-align: center
+        color: #5A7184
     &-wrapper
         display: flex
         width: 948px
         flex-wrap: wrap
         justify-content: space-between
+        &-center
+            display: flex
+            align-items: center
+        &_mt-200
+            margin-top: 200px
+            width: 1140px
+            &::after
+                content: ""
+                width: 100%
+                height: 1px
+                background-color: #E5EAF4
+                margin-top: 105px
+                margin-bottom: 145px
+    &-info
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 64px
+
     &__card
         margin-bottom: 16px
         background: $light
@@ -17,6 +87,19 @@
         display: flex
         align-items: flex-start
         padding: 30.5px
+        &-center
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 465px
+            height: 200px
+        &_light
+            background-color: transparent
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05)
+            border: none
+            position: relative
+            padding: 0
+            margin-bottom: 58px
         &-icon
             margin-right: 24px
         &-info
@@ -27,7 +110,9 @@
             font-style: normal
             font-weight: bold
             font-size: 22px
-            line-height: 33px
+            line-height: 32px
+            &_600
+                font-weight: 600
         &-text
             font-family: Open Sans
             font-style: normal
@@ -44,3 +129,24 @@
         width: 100%
         &__icon
             margin-left: 15px
+    &__wave
+        width: 105%
+        height: 150px
+        background: linear-gradient(180deg, #F8FBFF 0%, rgba(250, 251, 251, 0.0001) 100%)
+        border-radius:  0 0 75% 75%
+        position: absolute
+        bottom: 0px
+        z-index: 100
+        &-wrapper
+            width: 100%
+            overflow-x: hidden
+            display: flex
+            justify-content: center
+    &__hidden
+        position: absolute
+        width: 100%
+        bottom: -150px
+        left: 0
+        right: 0
+        height: 150px
+        overflow: hidden

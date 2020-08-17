@@ -1,6 +1,76 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .statistics
+        &__item
+            padding: 30px 60px
+    .features
+        &__cards
+            &-wrapper
+                width: 79%
+    .bunner
+        &-wrapper
+            flex-direction: column
+        &__title
+            text-align: center
+            margin-bottom: 44px
+
+    .hero
+        &__cards
+            &-wrapper
+                width: 980px
+    .cards
+        &-wrapper
+            &_mt-200
+                width: 960px
+
+    &__card
+        margin-bottom: 16px
+        background: $light
+        border: 1px solid #E5EAF4
+        box-sizing: border-box
+        box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+        border-radius: 16px
+        display: flex
+        align-items: flex-start
+        padding: 30.5px
+        &_light
+            background-color: transparent
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.05)
+            border: none
+            position: relative
+            padding: 0
+            margin-bottom: 58px
+        &-icon
+            margin-right: 24px
+        &-info
+            display: flex
+            flex-direction: column
+        &-title
+            color: $dark
+            font-style: normal
+            font-weight: bold
+            font-size: 22px
+            line-height: 32px
+            &_600
+                font-weight: 600
+        &-text
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 32px
+            color: #5A7184
+            max-width: 338px 
+    &-more
+        color: $primary
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        &__icon
+            margin-left: 15px
+
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -10,13 +80,134 @@
     .cards
         &-wrapper
             width: 704px
+            flex-direction: column
         &__card
             flex-direction: column
             &-text
                 max-width: 280px
+                &_light
+                    max-width: 100%
+            &_light
+                flex-direction: row
+            &-icon
+                width: 13%
+            &-center
+                width: 465px
+
+    .statistics
+        &__items
+            flex-wrap: wrap
+        &__item
+            &::after
+                bottom: 0
+                left: 0
+                right: auto
+                top: auto
+                content: ""
+                width: 100%
+                border: none
+                border-bottom: 1px solid $grey
+                height: 2px
+    .features
+        &__cards
+            &-wrapper
+                width: 100%
+        &__card
+            width: 100%
+            align-items: center
+            &-title
+                text-align: center
+            &-text
+                text-align: center
+            &-more
+                justify-content: center
+    .sponsors
+        margin-bottom: 200px
+        &-wrapper
+            height: 500px
+            width: 500px
+            display: flex
+            flex-direction: column
+        &__info
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            text-align: center
+            max-width: 100%
+        &__icon
+            &_first
+                top: 158px
+                left: 0
+            &_second
+                top: 206px
+                left: 187px
+            &_third
+                top: 182px
+                right: 0px
+            &_force
+                bottom: 0px
+                left: 94px
+            &_fifth
+                bottom: 4px
+                right: 93px
+    .questions
+        &-wrapper
+            justify-content: center
+        &__leftside
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            text-align: center
+        &__text
+            text-align: center
+        &__info
+            flex-direction: row
+            width: 672px
+        &__answers
+            margin-top: 46px
+            width: 100%
+    .footer
+        &-wrapper
+            justify-content: flex-start
+        &__uls
+            margin-left: 50px  
+            flex-basis: 40%
+            flex-wrap: wrap
+        &__company
+            margin-top: 48px
+        &__more
+            margin-top: 48px    
+    .hero
+        &__cards
+            &-wrapper
+                width: 100%
+        &__card
+            margin-bottom: 24px
+            justify-content: space-between
+            flex-direction: row
+            flex-wrap: wrap
+            max-width: 100%
+            min-width: 100%
+            height: 338px
+            &-text
+                &::after
+                    display: none
+            &-info
+                width: 40%
+                margin-top: 0
+            &-about
+                width: 40%
+        &__button
+            &_fill
+                &-blue
+                    border: 2px solid #1565D8
+                    border-radius: 8px
+                    width: 200px
 
 @media (max-width: 767px)
-    .container
+    .container  
         max-width: 576px
         width: 92%
     .header
@@ -43,10 +234,23 @@
                 width: 22px
                 height: 2.2px
                 background-color: $light
+                &-dark
+                    background-color: $dark
     .hero
         &__title
             font-size: 48px
             line-height: 60px
+        &__card
+            &-info
+                width: 50%
+            &-about
+                width: 35%
+        &__button
+            &_fill
+                &-blue
+                    border: 2px solid #1565D8
+                    border-radius: 8px
+                    width: 200px
     .cards
         &-wrapper
             flex-direction: column
@@ -57,18 +261,161 @@
             width: 100%
             &-text
                 max-width: 90%
-            
+            &-icon
+                width: 17%
+                flex-shrink: 0  
+    .start
+        &__tabs
+            width: 100%
+            &-up
+                width: 100%
+                overflow-x: auto
+        &__info
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            &-item
+                margin-bottom: 20px
+    .sponsors
+        &-wrapper
+            width: 100%
+    .questions
+        &__info
+            width: 500px
+        &__answer
+            &-title
+                &::after
+                    display: none
+        &__slide
+            &-text
+                font-family: HK Grotesk
+                font-style: normal
+                font-weight: normal
+                font-size: 28px
+                line-height: 44px
+                text-align: center
+                letter-spacing: 1px
+                color: $light
+    .bunner
+        &-wrapper
+            padding: 80px 0px
+    .footer
+        &-wrapper
+            flex-wrap: wrap-reverse
+        &__about
+            align-items: center
+            width: 100%
+            margin-top: 45px
+        &__title
+            max-width: 100%     
+            text-align: center
+        &__uls
+            margin-left: 0  
+            flex-basis: 100%
+        &__company
+            margin-top: 0
+        &__more
+            margin-top: 0
+        &__info
+            display: none
 @media (max-width: 576px)
     .container
         max-width: 85%
     .hero
-        &__cards
-            transform: translateY(750px)
+        &__buttons
+            flex-direction: column
+        &__button
+            margin-top: 15px
+        &__card
+            margin-bottom: 24px
+            justify-content: flex-start
+            flex-direction: column
+            flex-wrap: nowrap
+            height: 623px
+            &-text
+                &::after
+                    display: block
+            &-info
+                width: 100%
+                margin-top: 27px
+            &-about
+                width: 100%
+    .cards
+        &__card
+            align-items: center
+            width: 100%
+            flex-direction: column
+            &-title
+                text-align: center
+            &-text
+                max-width: 90%
+                text-align: center
+            &-icon
+                width: max-content
+                flex-shrink: 0  
+
+        &-wrapper
+            &::after
+                display: none
+    .sponsors
+        &-wrapper
+            margin-left: auto
+            margin-right: auto
+            height: 651px
+            width: 288px
+        &__title
+            max-width: 263px
+            margin-bottom: 5px  
+        &__icon
+            &_first
+                top: 426px
+                left: 0
+            &_second
+                top: 188px
+                left: 96px
+            &_third
+                top: 339px
+                right: 0px
+            &_force
+                bottom: 238px
+                left: 2px
+            &_fifth
+                bottom: 0px
+                right: 0
+    .questions
+        &__info
+            flex-direction: column
+            width: 100%
+    .bunner
+        &__buttons
+            flex-direction: column
+        &__button
+            margin-bottom: 15px
+            width: 207px
+            &_fill
+                padding: 16px 22px
+                margin-right: 0
+    .footer
+        &__uls
+            flex-basis: 75%
+@media (max-width: 400px)
+    .sponsors
+        &-wrapper
+            width: 100%
+    .footer
+        &__uls
+            flex-basis: 100%
+
+
 @media (max-width: 320px)
     .hero
-        &__cards
-            transform: translateY(950px)
         &__title
             font-size: 32px
             line-height: 40px
+    .cards
+        &__card
+            &-title
+                font-size: 20px
+            &-text
+                font-size: 16px
 

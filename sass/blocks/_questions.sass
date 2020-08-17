@@ -1,0 +1,272 @@
+.questions
+    margin-top: 141px
+    position: relative
+    background-color: #0D2436
+    &_light
+        margin-top: 30px
+        background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%);
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__subtitle
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        letter-spacing: 2px
+        text-transform: uppercase
+        color: $green
+        margin-bottom: 16px
+    &__leftside
+        width: 417px
+    &__title
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: 0.2px
+        color: $light
+        margin-bottom: 16px
+    &__text
+        color: $grey
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 32px
+    &__info
+        display: flex
+        flex-direction: column
+        margin-top: 32px
+        &-item
+            display: flex
+            flex-direction: column
+            margin-bottom: 32px
+    &__wave
+        width: 105%
+        height: 150px
+        background-color: #0D2436
+        border-radius: 75% 75% 0 0 
+        position: absolute
+        top: 0
+        z-index: -100
+        &-wrapper
+            width: 100%
+            overflow-x: hidden
+            display: flex
+            justify-content: center
+    &__hidden
+        position: absolute
+        width: 100%
+        top: -150px
+        left: 0
+        right: 0
+        height: 150px
+        overflow: hidden
+    &__answers
+        border-top: 3px solid $green
+        width: 512px
+        background-color: $light
+        border-radius: 16px
+        padding: 32px   
+        display: flex
+        flex-direction: column
+        box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+        border-radius: 8px 8px 16px 16px  
+        height: 100%
+    &__answer
+        position: relative
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 0.2px
+        color: $dark
+        &-title
+            margin-bottom: 27px
+            font-family: HK Grotesk
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 24px
+            letter-spacing: 0.2px
+            display: flex 
+            justify-content: space-between
+            &::after
+                content: "+"    
+                color: #1565D8
+                font-style: normal 
+                font-weight: 900
+                font-size: 24px
+                line-height: 14px
+            &_active
+                margin-bottom: 0
+                &:after
+                    content: "–"
+        &-text
+            margin-top: 12px
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 28px
+            color: $grey
+            display: none
+            margin-bottom: 17px
+            &_active
+                display: block
+        &:after
+            margin-top: 27px
+            mix-blend-mode: normal
+            opacity: 0.4
+            position: absolute
+            bottom: 0
+            left: 0
+            content: ""
+            width: 100%
+            border: none
+            border-bottom: 1px solid $grey
+            height: 1px
+        &:nth-last-child(1)
+            &:after
+                display: none
+    &__slider
+        margin-top: 160px
+        margin-bottom: 160px
+    &__slide
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-text
+            max-width: 750px
+            color: #B3BAC5
+            font-family: HK Grotesk
+            font-style: normal
+            font-weight: normal
+            font-size: 40px
+            line-height: 60px
+            text-align: center
+            letter-spacing: 0.2px
+            margin-top: 18px
+    &__author
+        display: flex
+        margin-top: 47px
+        &-avatar
+            margin-right: 16px
+        &-avatar
+            width: 40px
+            height: 40px
+            object-fit: cover
+            border-radius: 50%
+        &-info
+            display: flex
+            flex-direction: column
+        &-position
+            font-family: Open Sans
+            font-style: italic
+            font-weight: normal
+            font-size: 14px
+            line-height: 19px
+            color: $grey
+.questions
+    &_light
+        width: 100%
+        background-color: $light
+        border-radius: 16px
+        padding: 32px   
+        display: flex
+        flex-direction: column
+        box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+        border-radius: 8px 8px 16px 16px  
+        height: 100%
+        &__title
+            font-family: HK Grotesk
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 48px
+            text-align: center
+            letter-spacing: 0.2px
+            margin-bottom: 64px
+            color: $dark
+        &-wrapper
+            display: flex
+            justify-content: center
+.question
+    position: relative
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: $dark
+    border: 1px solid #E5EAF4
+    box-sizing: border-box
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03)
+    border-radius: 8px
+    padding: 32px
+    width: 100%
+    margin-bottom: 16px
+    background-color: $light
+    &-title
+        margin-bottom: 27px
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 0.2px
+        display: flex 
+        justify-content: space-between
+        &::after
+            content: "+"    
+            color: #1565D8
+            font-style: normal 
+            font-weight: 900
+            font-size: 24px
+            line-height: 14px
+        &_active
+            margin-bottom: 0
+            color: $primary
+            &:after
+                content: "–"
+    &-text
+        margin-top: 12px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        color: $grey
+        display: none
+        margin-bottom: 17px
+        &_active
+            display: block
+    
+
+.info
+    &__item
+        &-header
+            font-family: Open Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            color: #959EAD
+            display: flex
+            align-items: center
+        &-text
+            margin-left: 40px
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 28px
+            color: $grey
+        &-icon
+            margin-right: 16px

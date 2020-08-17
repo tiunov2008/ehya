@@ -1,6 +1,8 @@
 .start
     display: flex
     justify-content: center
+    margin-top: 141px
+    position: relative
     &-wrapper
         display: flex
         flex-direction: column
@@ -14,6 +16,7 @@
         letter-spacing: 2px
         text-transform: uppercase
         color: $green
+        margin-bottom: 16px
     &__title
         font-family: HK Grotesk
         font-style: normal
@@ -22,6 +25,7 @@
         line-height: 48px
         letter-spacing: 0.2px
         color: $dark
+        margin-bottom: 16px
     &__text
         color: $grey
         font-family: Open Sans
@@ -29,6 +33,8 @@
         font-weight: normal
         font-size: 18px
         line-height: 32px
+        margin-bottom: 64px
+        text-align: center
     &__tabs
         background-color: #0F1F2B
         border-radius: 16px
@@ -36,11 +42,16 @@
         display: flex
         flex-direction: column
         align-items: center
+        margin-bottom: 25px
         &-up
             display: flex
             margin-bottom: 36px
+        &-text
+            display: none
+            &_active
+                display: block
     &__tab
-        background: $light
+        background-color: $light
         padding: 7px 16px
         mix-blend-mode: normal
         opacity: 0.09
@@ -63,3 +74,23 @@
             background-color: $light
             padding: 7px 16px
             border-radius: 6px
+            opacity: 1
+    &__info
+        display: flex
+        align-items: center
+        margin-bottom: 120px
+    &__info
+        &-item
+            display: flex
+            align-items: center
+            color: $dark
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            margin-right: 31px
+
+.info
+    &__item
+        &-text
+            margin-left: 12px
